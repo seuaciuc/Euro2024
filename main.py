@@ -6,6 +6,7 @@ import pandas as pd
 ### INPUTS
 pklfile = 'Euro2024.pkl'
 firstPlayoffRow = 51 # first playoff row in excel file
+title = 'Eruo 2024'
 
 ## load data
 scoreData = pd.read_pickle(pklfile)
@@ -95,7 +96,7 @@ def displayScores(scores,playoff=firstPlayoffRow-2):
 
 ##############################################################################
 ## SIDE BAR
-st.sidebar.title("World Cup 2022")
+st.sidebar.title(title)
 options = ['Rankings','Scores']+Player
 radio =  st.sidebar.radio(label='Show:',options=options,index=0)
 
