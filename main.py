@@ -97,13 +97,13 @@ def displayScores(scores,playoff=firstPlayoffRow-2):
 ##############################################################################
 ## SIDE BAR
 st.sidebar.title(title)
-options = ['Rankings','Scores']+Player
+options = ['Standings','Scores']+Player
 radio =  st.sidebar.radio(label='Show:',options=options,index=0)
 
 
 ##############################################################################
 ## RANKINGS
-if radio == 'Rankings':
+if radio == 'Standings':
     st.table(rankings)
 
 ##############################################################################
